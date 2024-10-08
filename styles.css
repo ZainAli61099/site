@@ -14,27 +14,16 @@ b {
 }
 
 section {
-  display: inline-block;
+  display: flexbox;
   font-family: 'Courier New', Courier, monospace;
   margin-top: 40px;
+  text-align: center;
 }
 
 img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-}
-
-.left-sec {
-  left: 25%;
-  text-align: center;
-  margin-left: 25%;
-}
-
-.right-sec{
-  position: absolute;
-  right: 25%;
-  text-align: center;
 }
 
 footer {
