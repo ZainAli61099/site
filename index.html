@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="favicon2.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+</head>
+
+<body>
+  <!-- Loader Section (Shows for 2 seconds) -->
+  <div id="loader" class="loader">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Page Content (Initially Hidden) -->
+  <div id="content" style="display: none;">
+    <header>
+      <h1>Portfolio</h1>
+    </header>
+    <main>
+      <div class="image-container">
+        <img src="zain.jpg" alt="Zain Ali">
+      </div>
+      <div class="info">Zain Ali</div>
+      <div class="info1">--Frontend Developer--</div>
+      
+      <!-- Social Media Buttons -->
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100052029066666&mibextid=ZbWKwL" target="_blank" class="social-button"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/ZainAli61099/site" target="_blank" class="social-button"><i class="fab fa-github"></i></a>
+        <a href="https://wa.link/yyzxcy" target="_blank" class="social-button"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </main>
+    <footer>
+      <div>&copy; All Rights Reserved</div>
+    </footer>
+  </div>
+
+  <!-- JavaScript to manage the loading and content visibility -->
+  <script>
+    window.onload = function() {
+      // Show loader initially
+      setTimeout(function() {
+        // Hide loader and show content after 2 seconds
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      }, 2500); // 2000ms = 2 seconds
+    };
+  </script>
+</body>
+
+</html>
