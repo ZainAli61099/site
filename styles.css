@@ -67,7 +67,7 @@
   
   /* Text below the image */
   .info, .info1 {
-    font-size: 1.5rem;
+    font-size: 30px;
     color: #fff;
     opacity: 0;
     text-align: center;
@@ -76,6 +76,9 @@
     transition: opacity 0.4s ease-in-out;
     margin-top: 20px; /* Adjust space between image and text */
     font-weight: 500;
+    background: -webkit-linear-gradient(#03c595, #6c8b47);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   /* Show text when hovering over the image (only on desktop view) */
